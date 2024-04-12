@@ -120,7 +120,7 @@ app.get("/api/getscript", async (req, res) => {
 app.get("/api/getscriptbyname", async (req, res) => {
   try {
     const name = req.query.name;
-    console.log("Querying script data for:", name);
+
     if (!name) {
       return res
         .status(400)
